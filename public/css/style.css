@@ -150,11 +150,24 @@ body{
     border-radius: 3px;
     padding: 20px;
     width: 100%;
+    transition: 0.3s;
+}
+
+.btnNews:hover{
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.btnNews:hover a{
+    color: orange;
+    transition: 0.3s;
 }
 
 .btnNews a{
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .newsImg > img{
@@ -258,3 +271,23 @@ body{
     padding-right: 3px; 
 }
 
+@media only screen and (max-width: 1024px) {
+
+    .container{
+        grid-template-rows: 56px 340px 1850px 600px 150px;
+    }
+
+    .news{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .contact{
+        height: 600px;
+    }
+
+    .contactInfo::before{
+        height: 575px;
+    }
+    
+}
